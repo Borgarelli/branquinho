@@ -45,3 +45,6 @@ python run decifrarMsg.py
 Primeiro ele irá perguntar o endereço da sua chave privada, pois quando foi feita a criptografia dela, ela é sempre gerada com a sua chave privada.
 
 E depois o nome que você escolheu para sua mensagem, no caso acima utilizamos o nome "Teste", então basta informarmos "Teste" que ele irá revelar o contéudo da mensagem no terminal.
+
+# Repositório original
+Caso queira ter acesso ao repositório original da atividade, basta acessar aqui [Diogo Branquinho](https://github.com/diogobranquinho/criptografia)
