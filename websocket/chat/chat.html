@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSockets - Chat</title>  
+</head>
+
+<body>
+    <h1>Prj Banco de Dados Distribuídos. Batendo papo com os amigos ;)</h1>  
+
+    <div id="chatbox" class="message-screen"></div>  
+
+    <form id="conversa" class="inputField" onsubmit="EnviaTexto()" action="javascript:void(0);">
+        
+        <div class="inputGroup">
+            <span>Username</span>  
+            <input type="text" placeholder="Username" id="name" name="name" required>  
+        </div>
+
+        <div class="inputGroup">
+            <span>Mensagem</span>  
+            <input type="text" id="msg" placeholder="Mensagem" name="msg" required>  
+        </div>
+
+        <input type="submit" value="Enviar">  
+    </form>
+
+    <script>
+        var ws = new WebSocket("ws://localhost:8887/websocket");  // Estabelece a conexão com o localhost
+
+        ws.onmessage = function (evt) {
+            // Função executada quando uma mensagem é recebida do servidor
+            x = document.createElement("div");
+            x.innerHTML = evt.data;
+            var cbox = document.getElementById("chatbox");
+            cbox.innerHTML = "";
+            cbox.appendChild(x);
+            cbox.scrollTop = cbox.scrollHeight;
+        }
+
+        function EnviaTexto() {
+
+            var horario = new Date();
+            msgHora = horario.getHours() + ":" + horario.getMinutes(); 
+
+            var chatbox = document.getElementById("chatbox");
+            var msg = document.getElementById("msg");
+            var name = document.getElementById("name");
+
+            var userName = name.value;  
+            var message = msg.value;  
+
+            var msgPackage = [
+                userName,
+                message,
+                msgHora
+            ];  
+
+            chatbox.innerHTML = "";
+            msg.value = "";
+
+            ws.send(msgPackage);  // Envia o pacote para o servidor WebSocket
+        }
+    </script>
+
+    <style>
+        
+
+        h1 {
+            text-align: center;
+        }
+
+        .message-screen {
+            background-color: #f5f5f5;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+            margin: auto;
+            max-height: 50vh;
+            max-width: 768px;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+
+        
+
+        .inputField {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+
+        
+
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    </style>
+</body>
+
+</html>
