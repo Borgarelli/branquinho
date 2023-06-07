@@ -2,7 +2,7 @@
 Utilizando a bibliotéca do RSA para demonstrar um exemplo de criptografia assimétrica, com gerações de chaves públicas e privadas.
 
 # Pré - requisitos
-Para esse código funcionar, é necessário estar com o python na susa versão mais recente, que é o python 3 e também da biblioteca RSA.
+Para esse código funcionar, é necessário estar com o python na sua versão mais recente, que é o python 3 e também da biblioteca RSA.
 
 ### Instalando o rsa
 ```
