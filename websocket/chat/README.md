@@ -1,5 +1,5 @@
 # Pré - requisitos
-Para esse código funcionar, é necessário estar com o python na sua versão mais recente, nesse código estamos rodando ele na versão do python 2, porém ele funciona sem problemas nenhum, e também é necessário a biblioteca Tornado, que fica resposnsável pelas requisições HTTP
+Para esse código funcionar, é necessário estar com o python na sua versão mais recente, nesse código estamos rodando ele na versão do python 2, porém ele funciona sem problemas nenhum, e também é necessário a biblioteca Tornado, que fica resposnsável pelas requisições HTTP, é interessante utilizar a extensão Live Server para facilitar a visualização e execução do chat.html.
 
 ### Instalando o Tornado
 ```
@@ -26,4 +26,4 @@ Para facilitar a utilização do código, recomendo utilizar a extensão Live Se
 
 
 # Repositório original
-Caso queira ter acesso ao repositório original da atividade, basta acessar aqui [Diogo Branquinho](https://github.com/diogobranquinho/criptografia)
+Caso queira ter acesso ao repositório original da atividade, basta acessar aqui [Diogo Branquinho](https://github.com/diogobranquinho/websocket)
