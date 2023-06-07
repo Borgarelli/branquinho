@@ -1,5 +1,5 @@
 # Pré - requisitos
-Para esse código funcionar, é necessário estar com o python na sua versão mais recente, nesse código estamos rodando ele na versão do python 2, porém ele funciona sem problemas nenhum, e também é necessário a biblioteca Tornado, que fica resposnsável pelas requisições HTTP, é interessante utilizar a extensão Live Server para facilitar a visualização e execução do chat.html.
+Para esse código funcionar, é necessário estar com o python na sua versão mais recente, nesse código estamos rodando ele na versão do python 2, porém ele funciona sem problema nenhum, e também é necessário a instalação do miniframework Tornado, que fica responsável pelas requisições HTTP, é interessante utilizar a extensão Live Server do próprio Vscode para facilitar a visualização e execução do chat.html
 
 ### Instalando o Tornado
 ```
@@ -9,8 +9,7 @@ pip install tornado
 ## Executando o chat
 
 ### Executando o serverchat
-Para iniciarmos, é necessário iniciarmos nosso server, que será responsável por abrigar qualquer usuário que se conecte ao nosso localhost
-
+Para iniciarmos, é necessário primeiro estabelecer nosso servidor que será responsável por abrigar todo usuário que se conecte ao nosso localhost
 ```
 python run serverchat.py
 ```
@@ -22,7 +21,7 @@ Depois de subirmos o servidor, e o tornado estabelecer as requisições HTTP, ba
 ```
 run chat.html
 ```
-Para facilitar a utilização do código, recomendo utilizar a extensão Live Server do próprio Vscode, é de extrema importancia que o servidor tenha sido rodado, é legal notarmos, que o chat em si ele não está configurado no html, mas sim no serverchat, o front só fica responsável por "logarmos" no chat, com um usuário e a mensagem que ele deseja enviar
+Para facilitar a utilização do código, recomendo utilizar a extensão Live Server do próprio Vscode, é de extrema importancia que o servidor tenha sido rodado antes do front-end, é interessante notarmos que o chat em si ele não foi necessáriamente gerado pelo html, mas sim pelo serverchat, o front só fica responsável por "logarmos" no chat, com um username e a mensagem que deseja enviar.
 
 
 # Repositório original

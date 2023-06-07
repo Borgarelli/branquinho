@@ -1,5 +1,5 @@
 # Pré - requisitos
-Para esse código funcionar, é necessário estar com o python na sua versão mais recente, nesse código estamos rodando ele na versão do python 2, porém ele funciona sem problemas nenhum, e também é necessário a biblioteca Tornado, que fica resposnsável pelas requisições HTTP, para a parte do front-end, é interessante utilizar a extensão Live Server para facilitar a visualização e execução do chat.html
+Para esse código funcionar, é necessário estar com o python na sua versão mais recente, nesse código estamos rodando ele na versão do python 2, porém ele funciona sem problema nenhum, e também é necessário a instalação do miniframework Tornado, que fica responsável pelas requisições HTTP, é interessante utilizar a extensão Live Server do próprio Vscode para facilitar a visualização e execução do repete.html
 
 ### Instalando o Tornado
 ```
