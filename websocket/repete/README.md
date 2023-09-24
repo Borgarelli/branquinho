@@ -14,7 +14,7 @@ Para iniciarmos, é necessário iniciarmos nosso server, que será responsável 
 ```
 python run serverrepete.py
 ```
-O serverrepete, fica responsável por criar nosso servidor local, através do miniframework Tornado, através de funções, ele estabiliza e cuida das requisições POST e GET das requisições HTTP, que serão requisitadas pelo repete.html, diferente do serverchat, o serverrepete se trata de um server local, que ficará responsável por estabelecer as requisções HTTP que o repete.html irá utilizar, e com isso repetir toda mensagem que o usuário enviar, retornando as mensagens pelo GET, e repetindo tudo que o usuário enviar com um POST.
+O serverrepete, é responsável por gerar nosso servidor local, através do miniframework Tornado, através de funções, ele estabiliza e cuida das requisições POST e GET das requisições HTTP, que serão requisitadas pelo repete.html, diferente do serverchat, o serverrepete se trata de um server local, que ficará responsável por estabelecer as requisções HTTP que o repete.html irá utilizar, e com isso repetir toda mensagem que o usuário enviar, retornando as mensagens pelo GET, e repetindo tudo que o usuário enviar com um POST.
 
 ### Executando o repetehtml
 Depois de subirmos o servidor, e o tornado estabelecer as requisições HTTP, basta iniciarmos nosso repetidor com o username e a mensagem que queremos enviar
